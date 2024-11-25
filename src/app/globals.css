@@ -3,19 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-inter: 'Inter', sans-serif;
+  --font-noto-sans-jp: 'Noto Sans JP', sans-serif;
+  --font-kosugi-maru: 'Kosugi Maru', sans-serif;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter);
+  /* font-family: var(--font-noto-sans-jp);
+  font-family: var(--font-kosugi-maru); */
 }
+
+/* 
+article {
+  font-family: var(--font-inter);
+}
+
+p,
+li {
+  font-family: var(--font-kosugi-maru);
+} */
