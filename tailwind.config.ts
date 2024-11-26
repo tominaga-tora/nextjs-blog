@@ -11,6 +11,9 @@ export default {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)'
+      },
+      fontFamily: {
+        default: 'var(--default-font)' // カスタムフォントクラスを定義
       }
     }
   },
