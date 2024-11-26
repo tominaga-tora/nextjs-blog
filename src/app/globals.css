@@ -6,6 +6,8 @@
   --font-inter: 'Inter', sans-serif;
   --font-noto-sans-jp: 'Noto Sans JP', sans-serif;
   --font-kosugi-maru: 'Kosugi Maru', sans-serif;
+  --default-font: 'ui-sans-serif, system-ui, sans-serif, ' Apple Color Emoji
+    ', ' Segoe UI Emoji ', ' Segoe UI Symbol ', ' Noto Color Emoji;
 }
 
 body {

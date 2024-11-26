@@ -30,7 +30,7 @@ export function BlogList({ notionPosts }: blogProps) {
                   {post.types.map((type, typeIndex) => (
                     <span
                       key={typeIndex}
-                      className="bg-gray-800 px-2 py-1 rounded-full text-xs text-white"
+                      className="bg-gray-800 px-2 py-1 rounded-full text-xs text-white font-default"
                     >
                       {type}
                     </span>
