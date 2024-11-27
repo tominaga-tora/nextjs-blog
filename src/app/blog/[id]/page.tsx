@@ -20,3 +20,20 @@ export default async function Page({
     </div>
   )
 }
+
+// 記事ごとの動的なメタデータを生成
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ id: string }>
+}) {
+  const id = (await params).id
+  // データ取得
+  const pageContents: MdStringObject = await getBlogContents(id)
+  const pageInfo = await getBlogInfo(id)
+
+  return {
+    title: pageInfo.title || 'ブログ記事',
+    description: pageContents.parent || 'ブログ記事の詳細ページです。'
+  }
+}
